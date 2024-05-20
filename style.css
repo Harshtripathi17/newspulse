@@ -1,0 +1,156 @@
+/** @format */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"); */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* making global variable to take the color of the text */
+/* :root {
+  --primary-text-color: #0ea82f;
+  --secondary-text-color: #075297;
+  --accent-color: #2294ed;
+  --accent-color-dark: #e00b0b;
+} */
+
+body {
+  font-family: /*"Poppins",*/ sans-serif;
+  color: black /*var(--primary-text-color)*/;
+  font-weight: bolder;
+}
+
+p {
+  font-family: /*"Roboto",*/ sans-serif;
+  color: black;
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none; /* ! used to remove the underline from the links of the anchor tag*/
+}
+ul {
+  list-style: none; /* to remove bullet points from the list item*/
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.container {
+  /* to give all items a particular width to all items */
+  max-width: 1100px;
+  /* to make items get evenly align from left and right side basically all items come in center */
+  margin-inline: auto;
+  overflow: hidden;
+}
+nav {
+  background-color: red;
+  box-shadow: 0 0 4px #bbd0e2;
+  position: fixed;
+  top: 0;
+  z-index: 90;
+  left: 0;
+  right: 0;
+  /* left and right are done 0 so as to have 100% width*/
+}
+.main-nav {
+  justify-content: space-between;
+  padding: 6px 0;
+}
+.company-logo img {
+  width: 100px;
+}
+
+.nav-links ul {
+  gap: 16px;
+}
+
+.hover-link {
+  cursor: pointer;
+}
+.hover-link:hover {
+  color: yellow;
+}
+.hover-link:active {
+  color: rgb(9, 27, 194);
+}
+
+.nav-item.active {
+  color: white;
+}
+
+.search-bar {
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 32px;
+  gap: 8px;
+}
+.news-input {
+  width: 200px;
+  height: 100%;
+  padding-inline: 14px;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+.search-button {
+  font-family: sans-serif;
+  background-color: rgb(17, 217, 224);
+  width: 70px;
+  color: white;
+  height: 100%;
+  padding: 4px;
+}
+
+.search-button:hover {
+  background-color: rgb(27, 4, 238);
+}
+
+.search-button:active {
+  background-color: rgb(63, 228, 13);
+}
+
+main {
+  padding-block: 20px;
+  margin-top: 100px;
+}
+
+.cards-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: start;
+}
+
+.card {
+  width: 360px;
+  min-height: 400px;
+  box-shadow: 0 0 4px #d4ecff;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden; /*so that image and text get aligned and image do not crosses border*/
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 8px #d4ecff;
+  background-color: #f9fdff;
+  transform: translateY(-2px);
+}
+
+.card-header img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 12px;
+}
+
+.news-source {
+  margin-block: 12px;
+}
